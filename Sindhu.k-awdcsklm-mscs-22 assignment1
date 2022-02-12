@@ -1,0 +1,30 @@
+#super market bill
+rice_packet=1200
+biryani_rice_packet=500
+wheat_powder=300
+sugar=50
+biscut_packet=20
+bill_number=int(input('enter bill number:'))
+customername=input('enter customer name:')
+rpq=int(input('enter no.of rice packets:'))
+bpq=int(input('enter no.of biryani rice packets:'))
+wpq=int(input('enter no.of wheat packets:'))
+sq=int(input('enter no.of sugar packets:'))
+bipq=int(input('enter no.of biscuit:'))
+bill=(rice_packet*rpq)+(biryani_rice_packet*bpq)+(wheat_powder*wpq)+(sugar*sq)+(biscut_packet*bipq)
+if(bill>5000):
+    disc=bill*10/100
+    Tax=0
+if(bill>=3000):
+    disc=bill*8/100
+    Tax=bill*10/100
+if(bill>=2000):
+    disc=bill*5/100
+    Tax=bill*10/100
+if(bill>=1000):
+    disc=bill*3/100
+    Tax=bill*10/100
+else:
+    Tax=bill*18/100
+mainbill=bill-(disc+Tax)
+print('Bill amount:',mainbill)
