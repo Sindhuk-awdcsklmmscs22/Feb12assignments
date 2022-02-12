@@ -1,0 +1,11 @@
+#program for equal,not equal,less than&greater than
+a=int(input('enter a number:'))
+b=int(input('enter a number:'))
+if(a==b):
+    print('equal')
+if(a!=b):
+    print('not equal')
+if(a>b):
+    print('a greater than b')
+if(a<b):
+    print('a less than b')
